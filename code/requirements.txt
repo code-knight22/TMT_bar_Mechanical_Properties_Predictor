@@ -1,8 +1,13 @@
+# ML libraries pinned to the versions used to TRAIN the models (your laptop),
+# so Streamlit Cloud can open the .joblib files without a version mismatch.
+# If you retrain on a machine with different versions, update these pins to
+# match (run: python -c "import sklearn,numpy,scipy,joblib; print(sklearn.__version__,numpy.__version__,scipy.__version__,joblib.__version__)")
+scikit-learn==1.8.0
+numpy==2.4.4
+scipy==1.17.1
+joblib==1.5.3
 pandas>=2.0
-numpy>=1.24
-scikit-learn>=1.3
+openpyxl>=3.1
 matplotlib>=3.7
 seaborn>=0.12
-openpyxl>=3.1
-joblib>=1.3
 streamlit>=1.30
