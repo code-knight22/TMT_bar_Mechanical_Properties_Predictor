@@ -1,0 +1,74 @@
+{
+  "cv_r2": {
+    "YS": {
+      "LinearRegression": 0.009,
+      "RandomForest": 0.391,
+      "GradientBoosting": 0.382
+    },
+    "UTS": {
+      "LinearRegression": 0.024,
+      "RandomForest": 0.394,
+      "GradientBoosting": 0.414
+    },
+    "Elong": {
+      "LinearRegression": 0.045,
+      "RandomForest": 0.234,
+      "GradientBoosting": 0.175
+    },
+    "Ratio": {
+      "LinearRegression": 0.036,
+      "RandomForest": 0.282,
+      "GradientBoosting": 0.245
+    }
+  },
+  "final": {
+    "YS": {
+      "selected_model": "RandomForest",
+      "holdout": {
+        "R2": 0.377,
+        "MAE": 14.935,
+        "RMSE": 18.868
+      }
+    },
+    "UTS": {
+      "selected_model": "GradientBoosting",
+      "holdout": {
+        "R2": 0.389,
+        "MAE": 13.167,
+        "RMSE": 16.562
+      }
+    },
+    "Elong": {
+      "selected_model": "RandomForest",
+      "holdout": {
+        "R2": 0.173,
+        "MAE": 1.191,
+        "RMSE": 1.457
+      }
+    },
+    "Ratio": {
+      "selected_model": "RandomForest",
+      "holdout": {
+        "R2": 0.249,
+        "MAE": 0.013,
+        "RMSE": 0.016
+      }
+    }
+  },
+  "acceptance": {
+    "actual_accept_rate": 0.653,
+    "predicted_accept_rate": 0.737,
+    "accept_classifier_accuracy": 0.76
+  },
+  "features": [
+    "C",
+    "Mn",
+    "RPM",
+    "LinSpeed",
+    "T_11std",
+    "WaterFlow",
+    "WaterPress",
+    "T_7pipe",
+    "EqualTemp"
+  ]
+}
